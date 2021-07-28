@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index2.css">
+    <script src="js/libery.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h2>sales</h2>
+        <img id="present" src="img/present.jpg" alt="img">
+    </div>
+    <button class="submit1">Hide</button>
+    <button class="submit2">Show</button>
+    <button class="submit3">Slide up</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $(".submit1").click(function(){
+           $(".header").toggle("slow"); 
+        });
+        $(".submit2").click(function(){
+           $(".header").show("fast"); 
+        });
+        $(".submit3").click(function(){
+           $(".header").slideDown(); 
+        });
+    });
+</script>
+</html>
